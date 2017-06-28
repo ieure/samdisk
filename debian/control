@@ -1,0 +1,21 @@
+Source: samdisk
+Section: otherosfs
+Priority: optional
+Maintainer: Ian Eure <ian@retrospec.tv>
+Build-Depends: debhelper (>= 9), zlib1g-dev (>= 1:1.2.8.dfsg-5), cmake (>= 3.7.2)
+Standards-Version: 3.9.8
+Homepage: http://simonowen.com/samdisk/
+Vcs-Git: https://github.com/simonowen/samdisk.git
+Vcs-Browser: https://github.com/simonowen/samdisk
+
+Package: samdisk
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Portable disk image utility
+ Read and write almost any soft-sectored floppy disk format compatible
+ with the PC floppy controller, including some traditionally
+ copy-protected formats. Also supports hard disk imaging to and from
+ HDF and raw formats.
+ .
+ This code base is still very much a work in progress, and expected to
+ be **incomplete** and **buggy** for a little while longer.
